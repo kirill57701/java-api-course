@@ -1,6 +1,6 @@
-package ru.course.aggregator.storage;
+package coursach.storage;
 
-import ru.course.aggregator.core.DataRecord;
+import coursach.core.DataRecord;
 import com.fasterxml.jackson.dataformat.csv.CsvMapper;
 import com.fasterxml.jackson.dataformat.csv.CsvSchema;
 import java.io.IOException;

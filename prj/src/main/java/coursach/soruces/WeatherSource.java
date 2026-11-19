@@ -1,8 +1,8 @@
-package ru.course.aggregator.sources;
+package coursach.sources;
 
-import ru.course.aggregator.core.ApiHttpClient;
-import ru.course.aggregator.core.ApiSource;
-import ru.course.aggregator.core.DataRecord;
+import coursach.core.ApiHttpClient;
+import coursach.core.ApiSource;
+import coursach.core.DataRecord;
 import com.fasterxml.jackson.databind.JsonNode;
 import java.io.IOException;
 import java.time.Instant;

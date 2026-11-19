@@ -1,6 +1,6 @@
-package ru.course.aggregator.storage;
+package coursach.storage;
 
-import ru.course.aggregator.core.DataRecord;
+import coursach.core.DataRecord;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import java.io.IOException;

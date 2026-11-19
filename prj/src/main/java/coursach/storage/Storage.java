@@ -1,6 +1,6 @@
-package ru.course.aggregator.storage;
+package coursach.storage;
 
-import ru.course.aggregator.core.DataRecord;
+import coursach.core.DataRecord;
 import java.io.IOException;
 import java.util.List;
 

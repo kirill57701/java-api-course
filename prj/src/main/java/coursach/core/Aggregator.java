@@ -1,4 +1,4 @@
-package ru.course.aggregator.core;
+package coursach.core;
 
 import java.io.IOException;
 import java.util.ArrayList;
