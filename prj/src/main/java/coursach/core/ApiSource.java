@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.util.Map;
 
 public interface ApiSource {
-    String n();
-    Map<String, String> defpar();
-    DataRecord fetch(Map<String, String> p) throws IOException, InterruptedException;
+    String name();
+    Map<String, String> defaultParams();
+    DataRecord fetch(Map<String, String> params) throws IOException, InterruptedException;
 }

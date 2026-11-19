@@ -1,9 +1,9 @@
 package coursach.core;
 
 public record DataRecord(
-        String sourc,
-        String quer,
-        String titl,
-        String val,
-        String whercol
+        String source,
+        String query,
+        String title,
+        String value,
+        String collectedAt
 ) { }
