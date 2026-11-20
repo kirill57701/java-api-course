@@ -6,18 +6,31 @@ import coursach.storage.Storage;
 import java.nio.file.Path;
 import java.util.Arrays;
 import java.util.List;
+import java.io.IOException;
+import java.util.logging.Logger;
+import java.util.logging.Level;
 
 public class Main {
+    private static final Logger logger =
+            Logger.getLogger(Main.class.getName());
+
     public static void main(String[] args) {
         try {
             run(args);
-        } catch (Exception e) {
-            System.err.println("Ошибка: " + e.getMessage());
+        } catch (IllegalArgumentException e) {
+            logger.log(Level.WARNING, "Неверные аргументы", e);
+            System.exit(1);
+        } catch (IOException e) {
+            logger.log(Level.SEVERE, "Ошибка HTTP или файла", e);
+            System.exit(1);
+        } catch (InterruptedException e) {
+            Thread.currentThread().interrupt();
+            logger.log(Level.SEVERE, "Запрос прерван", e);
             System.exit(1);
         }
     }
 
-    private static void run(String[] args) throws Exception {
+    private static void run(String[] args) throws InterruptedException, IOException {
         if (args.length == 0) {
             help();
             return;
